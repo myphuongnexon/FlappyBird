@@ -33,7 +33,6 @@ export default function App() {
               break;
 
             case 'new_point':
-              alert(currentPoints);
               setCurrentPoints(currentPoints + 1);
               break;
           }
