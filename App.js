@@ -8,7 +8,7 @@ import Physics from './physics';
 export default function App() {
   const [running, setRunning] = useState(false);
   const [gameEngine, setGameEngine] = useState(null);
-  const [currentPoints, setCurrentPoints] = useState(null);
+  const [currentPoints, setCurrentPoints] = useState(0);
 
   useEffect(() => {
     setRunning(false);
@@ -33,6 +33,7 @@ export default function App() {
               break;
 
             case 'new_point':
+              alert(currentPoints);
               setCurrentPoints(currentPoints + 1);
               break;
           }
